@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter a number:</label>
+        <input type="number" id="inputNum" />
+        <button type="button" onclick="checkNumber()">Check</button>
+    </form>
+
+    <p id="result"></p>
+    <script>
+
+function checkNumber() {
+    var number = document.getElementById('inputNum').value;
+        var resultText;
+     if (number > 0) {
+        resultText = "The number is positive.";
+    } else if (number < 0) {
+        resultText = "The number is negative.";
+    } else if (number==0) {
+        resultText = "The number is zero.";
+    }
+    else {
+        resultText = "please enter a valid number";
+    }
+    document.getElementById('result').innerText = resultText;
+}
+
+    </script>
+    
+</body>
+</html>  
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter a number:</label>
+        <input type="number" id="inputNum" />
+        <button type="button" onclick="checkNumber()">Check</button>
+    </form>
+
+    <p id="result"></p>
+    <script>
+
+function checkNumber() {
+    var number = document.getElementById('inputNum').value;
+        var resultText;
+     if (number % 2 == 0) {
+        resultText = "The number is even.";
+    } 
+    else {
+        resultText = "number is odd";
+    }
+    document.getElementById('result').innerText = resultText;
+}
+
+    </script>
+</body>
+</html> 
+
+
